@@ -1,0 +1,41 @@
+schema_version: 3
+campaign:
+  name: "test-new-order"
+  title: "Test new order"
+  description: ""
+  instigator: "38179254"
+  repo_id: 1353597917
+  language: "en"
+  license: "CC-BY-4.0"
+automation:
+  central_repository: "lets-encode/instigation"
+  ref: "main"
+  path: "scripts/coordinator.ts"
+source:
+  kind: "facsimile"
+  images:
+    - "sources/img/01.jpg"
+    - "sources/img/02.jpg"
+  header:
+    title: "Blume und Duft"
+    composer: ""
+    publisher: ""
+    date: ""
+  rights_acknowledged: "1"
+pieces:
+  - id: "piece-01"
+    kind: "facsimile"
+    path: "sources/piece-01/score.mei"
+    zones:
+      - { surface: 1, ulx: 0, uly: 0, lrx: 1318, lry: 1734 }
+      - { surface: 2, ulx: 0, uly: 0, lrx: 1318, lry: 1734 }
+    header:
+      title: ""
+      composer: ""
+fragmentation:
+  strategy: "by-piece"
+validation:
+  required_validations: 1
+  pass_threshold: 1
+locking:
+  stale_after_minutes: 120
